@@ -1,0 +1,26 @@
+{
+    "pre-mating": {
+        "start": "12-15",
+        "end": "02-14"
+    },
+    "mating": {
+        "start": "02-15",
+        "end": "04-14"
+    },
+    "pregnancy": {
+        "start": "04-15",
+        "end": "06-14"
+    },
+    "birth/denning": {
+        "start": "06-15",
+        "end": "08-14"
+    },
+    "small cubs": {
+        "start": "08-15",
+        "end": "10-14"
+    },
+    "big cubs": {
+        "start": "10-15",
+        "end": "02-14"
+    }
+}
