@@ -28,7 +28,7 @@ def get_entries(raw_entries, dates):
               2023-01-03: 2}
     """
     return { dates[n]: raw_entries[n].value
-             for n in range(len(raw_entries))
+             for n in range(len(dates))
            }
 
 
@@ -83,6 +83,8 @@ class TrapActivity():
             for row in sheet:
                 if first:
                     for r in row[7:]:
+                        if r.value is None:
+                            break
                         date = r.value.split('.')
                         pdate = datetime.datetime(int(date[2]), int(date[1]), int(date[0]))
                         season_year = self._get_season_year(pdate)
